@@ -40,26 +40,7 @@ gride style related css
     "footer footer footer footer";
 }
 
-
-@media screen and (max-width: 576px) {
-  .grid-container {
-    gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "aside "
-      "ad"
-      "footer";
-  }
-}
-
-
-/* mobile device */
-
-
- @media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .grid-container {
     gap: 40px;
     grid-template-columns: 2fr 4fr 1fr;
@@ -69,4 +50,26 @@ gride style related css
       "aside main main"
       "ad footer footer";
   }
-} 
+}  
+
+/* desktop version */
+
+@media screen and (max-width: 576px) {
+  .grid-container {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "ad"
+    "footer"
+    ;
+  }
+}
+
+
+
+/* mobile device */
+
